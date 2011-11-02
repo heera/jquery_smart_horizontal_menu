@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jquery Smart Menu Plugin</title>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.smart_menu.js"></script>
+	<script type="text/javascript">
+		$().ready(function() {
+			
+			$('#my_menu').smartmenu();
+		
+			$('#my_menu2').smartmenu({
+				ul_background:'white url(./background.png)',
+				normal_color: 'gray',
+				hover_color: 'darkgray',
+				submenu_normal_backcolor: '#F4F4F4',
+				submenu_hover_backcolor: '#D8D9D9',
+				menu_border_color: 'gray',
+				max_menu_check:true,
+				max_menu:4,
+				parent_menuitem_animation:true
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="container">
+<p>
+<pre>
+With default options
+
+$(document).ready(function() {
+	$('#my_menu').makemenu();
+});
+</pre>
+<ul  id='my_menu'>
+	<li class='ancestor'><a href='#'>Home</a>
+		<ul>
+			<li><a href='#'>UK Home</a></li><li><a href='#'>US Home</a></li>
+		</ul>
+	</li>
+	<li class='ancestor'><a href='#'>Services</a>
+		<ul>
+			<li><a href='#'>Web Development</a></li>
+			<li class='parent'><a href='#'>Mobile Apps</a>
+				<ul>
+					<li><a href='#'>Android</a></li><li><a href='#'>iPhone</a></li>
+				</ul>
+			</li>
+			<li><a href='#'>Desktop Apps</a></li>
+		</ul>
+	</li>
+	<li class='ancestor'><a href='#'>Contact</a></li>
+	<li class='ancestor'><a href='#'>Support</a></li>
+	<li class='ancestor'><a href='#'>Feedback</a></li>
+	<li class='ancestor'><a href='#'>Anonymous</a>
+		<ul>
+			<li><a href='#'>Apple</a>
+				<ul>
+					<li><a href='#'>iPhone</a></li>
+				</ul>
+			</li>	
+			<li><a href='#'>Google</a>
+			<ul>
+				<li><a href='#'>android 2.0</a></li>
+				<li><a href='#'>Map</a>
+					<ul>
+						<li><a href='#'>Map 2.0</a></li>
+						<li><a href='#'>Map 3.0</a>
+							<ul>
+								<li><a href='#'>Old</a></li>
+								<li><a href='#'>New</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</ul>
+	</li>
+</ul>
+<pre>
+
+With some customizations
+
+$(document).ready(function() {
+	$('#my_menu').makemenu({
+	ul_background:'white url(./background.png)',
+	normal_color: 'gray',
+	hover_color: 'darkgray',
+	submenu_normal_backcolor: '#F4F4F4',
+	submenu_hover_backcolor: '#D8D9D9',
+	menu_border_color: 'gray',
+	max_menu_check:true,
+	max_menu:4,
+	parent_menuitem_animation:true
+	});
+});
+</pre>
+</p>
+</div>
+
+<ul  id='my_menu2'>
+	<li class='ancestor'><a href='#'>Home</a>
+		<ul>
+			<li><a href='#'>UK Home</a></li><li><a href='#'>US Home</a></li>
+		</ul>
+	</li>
+	<li class='ancestor'><a href='#'>Services</a>
+		<ul>
+			<li><a href='#'>Web Development</a></li>
+			<li class='parent'><a href='#'>Mobile Apps</a>
+				<ul>
+					<li><a href='#'>Android</a></li><li><a href='#'>iPhone</a></li>
+				</ul>
+			</li>
+			<li><a href='#'>Desktop Apps</a></li>
+		</ul>
+	</li>
+	<li class='ancestor'><a href='#'>Contact</a></li>
+	<li class='ancestor'><a href='#'>Support</a></li>
+	<li class='ancestor'><a href='#'>Feedback</a></li>
+	<li class='ancestor'><a href='#'>Anonymous</a>
+		<ul>
+			<li><a href='#'>Apple</a>
+				<ul>
+					<li><a href='#'>iPhone</a></li>
+				</ul>
+			</li>	
+			<li><a href='#'>Google</a>
+			<ul>
+				<li><a href='#'>android 2.0</a></li>
+				<li><a href='#'>Map</a>
+					<ul>
+						<li><a href='#'>Map 2.0</a></li>
+						<li><a href='#'>Map 3.0</a>
+							<ul>
+								<li><a href='#'>Old</a></li>
+								<li><a href='#'>New</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</ul>
+	</li>
+</ul>
+
+</body>
+
+</html>
