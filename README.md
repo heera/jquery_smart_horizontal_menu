@@ -1,12 +1,5 @@
-WP-Fiddle
+Jquery Smart Horizontal Menu
 ===========
-[**Plugin Home Page**](http://heera.it/wp-fiddle-wordpress-plugin)
+[**Plugin Home Page**](http://heera.it/jquery-horizontal-smart-menu)
 
-A WordPress plugin for developers to insert jsFiddle in blog's post/page easily. This plugin is designed to use jsFiddle easily in a wordpress blog. Specially made for developers who wants to add a javascript example in their site. This plugin simplifies the process.
-
-== Installation ==
-
-1. Upload `WP-Fiddle` to your plug-in directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to the settings page and customize the plugin options.
-4. Begin adding JSFiddles to your posts and pages using `Insert JS Fiddle` button or shortcode and paste the jsFiddle link.
+This is a jquery horizontal menu plugin. It has no css dependency and not more than one image (optional), so it is very light weight and easy to use. It will be very useful when you have a menu with unlimited ul and li. It has no limitation of sub menus. One more specialty of this jquery horizontal menu plugin is that you can add a “more” menu to the main menu bar and wrap all other menus in it when it’s more than your given numbers of menu items. You can customize it in many ways, like animation, hover color e.t.c.
